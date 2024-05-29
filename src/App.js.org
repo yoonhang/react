@@ -1,0 +1,35 @@
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    
+    <div classNameName="App">
+      {/* <header classNameName="App-header">
+        <img src={logo} classNameName="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          classNameName="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header> */}
+
+
+<form className="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search" />
+  <button type="submit"><i className="fa fa-search"></i></button>
+</form>
+
+    </div>
+
+
+  );
+}
+
+export default App;
