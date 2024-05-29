@@ -1,29 +1,29 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
 import Comp from "./Comp";
+import Customer from './components/Customer';
 
 
-
-function App() {
-  
-  //let name = prompt("name : ?");
-  //console.log('456',name);
-
-  let day = new Date();
-  let date = day.toLocaleString();
-
-  console.log('456',date);
-  
-  
-  return (
-    
-    <><Comp hello="comp test" />
-    <div classNameName="App">
-      <h2>..{date}</h2>
-    </div></>
-
-
-  )
+const customer = {
+  'name' : '노리앤드',
+  'birthday' : '20240505',
+  'gender' : 'man',
+  'job' : '회사원'
 }
+
+
+class App extends Component {
+  render() {
+    return (
+      <Customer
+        name = {customer.name}
+        birthday={customer.birthday}
+        gender={customer.gender}
+        job={customer.job}
+      />
+    );
+  }
+}
+
 
 export default App;
